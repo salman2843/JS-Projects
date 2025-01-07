@@ -14,32 +14,6 @@ This is a simple web project that demonstrates a form with validation and data m
 
 ---
 
-## Project Structure
-
-```
-📂 Project Root
-├── 📄 index.html       # HTML structure for the form and data section
-├── 📄 styles.css       # CSS for styling the form, data table, and overall layout
-├── 📄 script.js        # JavaScript for validation, adding, editing, and removing data
-```
-
----
-
-## How to Use
-
-1. Open the `index.html` file in a web browser.
-2. Fill in the **Name**, **Age**, and **Phone Number** fields.
-3. Click the `Add` button:
-   - The entered data will appear below the form in a table format.
-   - If the fields are invalid, appropriate validation messages will be shown.
-4. **Edit Data**:
-   - Click the `Edit` button next to an entry.
-   - Modify the fields and confirm to update the data.
-5. **Remove Data**:
-   - Click the `Remove` button next to an entry to delete it.
-
----
-
 ## Validation Rules
 
 - **Name**: Must not be empty.
