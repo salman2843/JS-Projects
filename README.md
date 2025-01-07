@@ -49,12 +49,12 @@ This is a simple web project that demonstrates a form with validation and data m
 ## Screenshots
 
 ### Form
-![Form Screenshot](![image](https://github.com/user-attachments/assets/79612b1e-faea-438d-9bcc-f7b7b719ee18)
-)
+![image](https://github.com/user-attachments/assets/a01e0665-7ff9-4655-9f78-51339bd38383)
+
 
 ### Data Section
-![Data Section Screenshot](![image](https://github.com/user-attachments/assets/7c159d26-38fc-4d04-9f3b-90f05ace5a14)
-)
+![image](https://github.com/user-attachments/assets/f3f17ef2-0c0b-4371-8002-0ca02d114b2a)
+
 
 ---
 
