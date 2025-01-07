@@ -1,17 +1,17 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
+  background-color: #f8f9fa;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .container {
   max-width: 600px;
-  margin: 50px auto;
-  background-color: #fff;
+  margin: 0 auto;
   padding: 20px;
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 h1,
@@ -20,14 +20,20 @@ h2 {
   color: #333;
 }
 
-.form-box,
+.form-container,
 .data-section {
-  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  margin-left: 150px;
 }
 
 label {
   display: block;
-  font: 1.1rem "Fira Sans", sans-serif;
+  /* margin-bottom: 5px; */
+  font-weight: bold;
 }
 
 input {
@@ -40,32 +46,92 @@ input {
   border-radius: 4px;
   font-size: 16px;
 }
+
 #userForm {
   margin-left: 150px;
 }
 
-.data-section {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-}
-
+/* Edit and remove */
 .data-item {
-  background-color: #e9ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
   margin: 10px 0;
+  background-color: #e9ecef;
   border-radius: 4px;
   border: 1px solid #ccc;
 }
 
-.error {
-  color: red;
+.data-item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   font-size: 14px;
-  margin-top: -10px;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.action-buttons .edit-btn {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.action-buttons .edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.action-buttons .remove-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.action-buttons .remove-btn:hover {
+  background-color: #b02a37;
+}
+
+/* table-form data  */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px 10px;
+  vertical-align: top;
+}
+
+td:first-child {
+  font-weight: bold;
+  text-align: right;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table {
   margin-bottom: 10px;
 }
 
+/* button-css */
 .styled {
   border: 0;
   line-height: 2.5;

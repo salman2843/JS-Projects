@@ -3,51 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Form Project</title>
+    <title>Form with Edit and Remove</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <h1>Simple Form</h1>
-      <div class="form-box">
-        <h2><u>Enter Your Details</u></h2>
-        <form id="userForm">
+      <div class="form-container">
+        <h2><u>Enter Details</u></h2>
+        <div class="input-group">
           <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            minlength="4"
-            maxlength="8"
-            size="10"
-            placeholder="Enter your name"
-          />
-
-          <label for="age">Age </label>
-          <input
-            type="number"
-            id="age"
-            name="age"
-            placeholder="Enter your age"
-          />
-
-          <label for="phone">Phone Number </label>
-          <input
-            type="number"
-            id="phone"
-            placeholder="Enter your phone number"
-          />
-          <!-- <button type="button" id="addButton">Add</button> -->
+          <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+        <div class="input-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" placeholder="Enter your age" />
+        </div>
+        <div class="input-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" placeholder="Enter your phone number" />
           <input class="styled" type="button" value="Add" id="addButton" />
-        </form>
+        </div>
       </div>
     </div>
     <div class="data-section">
-      <h2>USERS DATA</h2>
+      <h2><u>Users</u></h2>
       <div id="dataContainer"></div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

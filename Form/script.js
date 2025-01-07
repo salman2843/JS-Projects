@@ -4,53 +4,129 @@ document.getElementById("addButton").addEventListener("click", function () {
   const phone = document.getElementById("phone").value.trim();
 
   // Validation
-  let error = false;
-  clearErrors();
-
-  if (name === "") {
-    showError("name", "Name is required");
-    error = true;
-  }
-
-  if (age === "" || isNaN(age) || age <= 0) {
-    showError("age", "Please enter a valid age");
-    error = true;
-  }
-
-  if (!/^\d{10}$/.test(phone)) {
-    showError("phone", "Phone number must be 10 digits");
-    error = true;
-  }
-
-  if (!error) {
+  if (validateInputs(name, age, phone)) {
     addData(name, age, phone);
     clearInputs();
   }
 });
 
+function validateInputs(name, age, phone) {
+  clearErrors();
+  let isValid = true;
+
+  if (name === "") {
+    showError("name", "Name is required");
+    isValid = false;
+  }
+
+  if (age === "" || isNaN(age) || age <= 0) {
+    showError("age", "Please enter a valid age");
+    isValid = false;
+  }
+
+  if (!/^\d{10}$/.test(phone)) {
+    showError("phone", "Phone number must be 10 digits");
+    isValid = false;
+  }
+
+  return isValid;
+}
+
 function showError(inputId, message) {
   const inputElement = document.getElementById(inputId);
   const errorElement = document.createElement("div");
   errorElement.className = "error";
+  errorElement.style.color = "red";
   errorElement.innerText = message;
   inputElement.insertAdjacentElement("afterend", errorElement);
 }
 
 function clearErrors() {
-  const errors = document.querySelectorAll(".error");
-  errors.forEach((error) => error.remove());
+  document.querySelectorAll(".error").forEach((error) => error.remove());
 }
 
 function addData(name, age, phone) {
   const dataContainer = document.getElementById("dataContainer");
   const dataItem = document.createElement("div");
   dataItem.className = "data-item";
-  dataItem.innerHTML = `
-        <strong>Name:</strong> ${name}<br>
-        <strong>Age:</strong> ${age}<br>
-        <strong>Phone:</strong> ${phone}
-    `;
+
+  // Content Section
+  const contentDiv = document.createElement("div");
+  contentDiv.className = "data-item-content";
+  contentDiv.innerHTML = `
+  <table>
+    <tr>
+      <td><strong>Name:</strong></td>
+      <td>${name}</td>
+    </tr>
+    <tr>
+      <td><strong>Age:</strong></td>
+      <td>${age}</td>
+    </tr>
+    <tr>
+      <td><strong>Phone :</strong></td>
+      <td>${phone}</td>
+    </tr>
+  </table>
+`;
+
+  // Action Buttons
+  const actionsDiv = document.createElement("div");
+  actionsDiv.className = "action-buttons";
+
+  const editButton = document.createElement("button");
+  editButton.className = "edit-btn";
+  editButton.innerText = "Edit";
+  editButton.addEventListener("click", () =>
+    editData(dataItem, name, age, phone)
+  );
+
+  const removeButton = document.createElement("button");
+  removeButton.className = "remove-btn";
+  removeButton.innerText = "Remove";
+  removeButton.addEventListener("click", () => removeData(dataItem));
+
+  actionsDiv.appendChild(editButton);
+  actionsDiv.appendChild(removeButton);
+
+  // Append to data item
+  dataItem.appendChild(contentDiv);
+  dataItem.appendChild(actionsDiv);
+
   dataContainer.appendChild(dataItem);
+}
+
+function editData(dataItem, oldName, oldAge, oldPhone) {
+  const name = prompt("Edit Name:", oldName);
+  const age = prompt("Edit Age:", oldAge);
+  const phone = prompt("Edit Phone Number:", oldPhone);
+
+  if (name && age && /^\d{10}$/.test(phone)) {
+    dataItem.querySelector(".data-item-content").innerHTML = `
+       <table>
+    <tr>
+      <td><strong>Name:</strong></td>
+      <td>${name}</td>
+    </tr>
+    <tr>
+      <td><strong>Age:</strong></td>
+      <td>${age}</td>
+    </tr>
+    <tr>
+      <td><strong>Phone :</strong></td>
+      <td>${phone}</td>
+    </tr>
+  </table>
+      `;
+  } else {
+    alert("Invalid input. Please provide valid details.");
+  }
+}
+
+function removeData(dataItem) {
+  if (confirm("Are you sure you want to remove this entry?")) {
+    dataItem.remove();
+  }
 }
 
 function clearInputs() {
