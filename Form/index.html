@@ -3,31 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form with Edit and Remove</title>
+    <title>User Information Manager</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <h1>Simple Form</h1>
+      <h1>User Information Manager</h1>
       <div class="form-container">
-        <h2><u>Enter Details</u></h2>
-        <div class="input-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" />
-        </div>
-        <div class="input-group">
-          <label for="age">Age</label>
-          <input type="number" id="age" placeholder="Enter your age" />
-        </div>
-        <div class="input-group">
-          <label for="phone">Phone Number</label>
-          <input type="text" id="phone" placeholder="Enter your phone number" />
-          <input class="styled" type="button" value="Add" id="addButton" />
+        <h2>Personal Details</h2>
+        <div class="input-wrapper">
+          <div class="input-group">
+            <input type="text" id="name" required />
+            <label for="name">Full Name</label>
+          </div>
+          <div class="input-group">
+            <input type="number" id="age" required />
+            <label for="age">Age</label>
+          </div>
+          <div class="input-group">
+            <input type="text" id="phone" required />
+            <label for="phone">Phone Number</label>
+          </div>
+          <button class="add-btn" id="addButton">
+            <span>Add User</span>
+          </button>
         </div>
       </div>
     </div>
     <div class="data-section">
-      <h2><u>Users</u></h2>
+      <h2>Users Directory</h2>
       <div id="dataContainer"></div>
     </div>
     <script src="script.js"></script>

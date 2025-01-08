@@ -23,12 +23,12 @@ This is a simple web project that demonstrates a form with validation and data m
 ## Screenshots
 
 ### Form
-![image](https://github.com/user-attachments/assets/a01e0665-7ff9-4655-9f78-51339bd38383)
 
+![form](image.png)
 
 ### Data Section
-![image](https://github.com/user-attachments/assets/f3f17ef2-0c0b-4371-8002-0ca02d114b2a)
 
+![user directory](image-1.png)
 
 ---
 
@@ -37,4 +37,5 @@ This is a simple web project that demonstrates a form with validation and data m
 - **HTML**: Structure of the form and data display.
 - **CSS**: Styling for the form and table layout.
 - **JavaScript**: Logic for validation, data management, and dynamic updates.
+
 ---
