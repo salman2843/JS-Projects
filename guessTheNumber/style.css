@@ -1,4 +1,132 @@
+:root {
+  --color-dark: #1e2019;
+  --color-gray: #393e41;
+  --color-light: #d3d0cb;
+  --color-yellow: #e2c044;
+  --color-blue: #587b7f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--color-gray);
+  color: var(--color-light);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.outer-div {
+  background-color: var(--color-dark);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.outer-div h1 {
+  color: var(--color-yellow);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.inner-div {
+  background-color: var(--color-blue);
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+.game-intro {
+  color: var(--color-light);
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+#guess {
+  color: var(--color-yellow);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.guessField {
+  padding: 12px 20px;
+  font-size: 1.1em;
+  border: 3px solid var(--color-light);
+  border-radius: 8px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  width: 200px;
+  text-align: center;
+}
+
+.guessSubmit {
+  padding: 12px 30px;
+  font-size: 1.1em;
+  background-color: var(--color-yellow);
+  border: none;
+  border-radius: 8px;
+  color: var(--color-dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.guessSubmit:hover {
+  background-color: var(--color-light);
+  transform: scale(1.05);
+}
+
+.resultParas {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--color-light);
+}
+
+.resultParas p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.lowOrHi h3 {
+  color: var(--color-yellow);
+  margin-top: 15px;
+  font-size: 1.3em;
+}
+
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#newGame {
+  color: var(--color-yellow);
+  transition: all 0.3s ease;
+}
+
+#newGame:hover {
+  color: var(--color-light);
+  transform: scale(1.1);
 }
