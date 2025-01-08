@@ -1,1 +1,53 @@
-### Currently working
+# 🎮 Guess The Number Game
+
+A fun and interactive number guessing game built with HTML, CSS, and JavaScript!
+
+## 🎯 Game Features
+
+- 🔢 Guess a number between 1-100
+- 📝 Track your previous guesses
+- ⏳ Limited to 10 attempts
+- 🎯 Get hints if your guess is too high or too low
+- 🔄 Play again feature
+
+## 🎪 Live Demo
+
+[Play the Game](https://js-projects-roan.vercel.app/)
+
+## 🎮 How to Play
+
+1. Enter a number between 1 and 100
+2. Click the Submit button or press Enter
+3. Get hints to guide your next guess
+4. Try to guess the correct number within 10 attempts!
+5. Click "Start Again" to play a new game
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3
+- JavaScript
+
+## 🚀 Quick Start
+
+1. Clone the repository
+2. Open `index.html` in your browser
+3. Start guessing!
+
+Enjoy the game and have fun! 🎉
+
+## 📸 Screenshot
+
+![Screenshot](image.png)
+
+## 🤝 Contributing
+
+Feel free to fork, create issues, and submit PRs. All contributions are welcome!
+
+## 🙏 Credits
+
+This project was created while following the JavaScript series by @hiteshchoudhary (https://www.youtube.com/@HiteshChoudharydotcom), an amazing YouTube educator. Thank you for the wonderful tutorials!
+
+---
+
+Made with ❤️ by Me!
