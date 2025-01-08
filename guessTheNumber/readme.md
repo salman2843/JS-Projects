@@ -38,15 +38,19 @@ Enjoy the game and have fun! 🎉
 
 ## 📸 Screenshot
 
-![Screenshot](image.png)
+![image](https://github.com/user-attachments/assets/38f6a2bd-267c-432b-a124-cdcd442d6d92)
+
 
 ## 🤝 Contributing
 
 Feel free to fork, create issues, and submit PRs. All contributions are welcome!
 
+
+
 ## 🙏 Credits
 
-This project was created while following the JavaScript series by @hiteshchoudhary (https://www.youtube.com/@HiteshChoudharydotcom), an amazing YouTube educator. Thank you for the wonderful tutorials!
+This project was created while following the JavaScript series by [@hiteshchoudhary](https://github.com/hiteshchoudhary), an amazing YouTube educator. Check out his [YouTube channel](https://www.youtube.com/@HiteshChoudharydotcom) for wonderful tutorials!
+
 
 ---
 
