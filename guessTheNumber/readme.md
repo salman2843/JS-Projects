@@ -45,9 +45,12 @@ Enjoy the game and have fun! 🎉
 
 Feel free to fork, create issues, and submit PRs. All contributions are welcome!
 
+
+
 ## 🙏 Credits
 
-This project was created while following the JavaScript series by [hiteshchoudhary] (https://www.youtube.com/@HiteshChoudharydotcom), an amazing YouTube educator. Thank you for the wonderful tutorials!
+This project was created while following the JavaScript series by [@hiteshchoudhary](https://github.com/hiteshchoudhary), an amazing YouTube educator. Check out his [YouTube channel](https://www.youtube.com/@HiteshChoudharydotcom) for wonderful tutorials!
+
 
 ---
 
