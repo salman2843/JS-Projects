@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Changing Body Color</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        backdrop-filter: blur(5px);
+      }
+
+      h1 {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+      }
+
+      .btn-container {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      button {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      #start {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      #stop {
+        background-color: #f44336;
+        color: white;
+      }
+
+      button:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Click Start to change background color</h1>
+      <div class="btn-container">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
